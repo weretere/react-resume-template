@@ -230,7 +230,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Pandemic',
     description: 'Tower Defense game to raise AIDS awareness',
-    url: 'https://rickparis.dev',
+    url: 'https://rickparis.dev/threedkeypoints',
     image: porfolioImage1,
   },
   /*{
@@ -346,7 +346,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'November 2019 - November 2011',
+    date: 'November 2019 - November 2020',
     location: 'Major League Baseball',
     title: 'Machine Learning Engineer',
     content: (
