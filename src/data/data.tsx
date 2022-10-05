@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Rick Paris',
+  description: "Keep up to date with all of Rick's projects",
 };
 
 /**
@@ -69,7 +69,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Rick Paris`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -104,16 +104,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I primarily work in data science with an emphasis on virtual and augmented reality. I have spent my
+   career as a researcher working to better understand how people use AR/VR and how they wish they could use it.
+   I don't consider myself a programmer, but someone who has those tools at his disposal. I am proficient at python, 
+   C#, C\/C++, and others. Most of my specific work lies in Camera Calibration, 3D Computer Geometry, and Human\/Computer Interaction.
+   `,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'NashVille, TN', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Interests', text: 'Weightlifting, kickball, home automation', Icon: SparklesIcon},
+    {label: 'Study', text: 'Vanderbilt University', Icon: AcademicCapIcon},,
   ],
 };
 
@@ -122,19 +122,70 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Machine Learning',
     skills: [
       {
-        name: 'English',
+        name: 'Tensorflow',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'PyTorch',
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'SciKit Learn',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Computer Vision',
+    skills: [
+      {
+        name: 'Human Recognition',
+        level: 10,
+      },
+      {
+        name: 'Structure From Motion',
+        level: 8,
+      },
+      {
+        name: 'OpenCV',
+        level: 8,
+      }
+    ]
+  },
+  {
+    name: 'Extended Reality',
+    skills: [
+      {
+        name: 'Camera Calibration',
+        level: 10,
+      },
+      {
+        name: 'Computational Modeling',
+        level: 8,
+      },
+      {
+        name: 'Human Computer Interaction',
+        level: 8,
+      }
+    ]
+  },
+  {
+    name: 'DevOps',
+    skills: [
+      {
+        name: 'Docker',
+        level: 10,
+      },
+      {
+        name: 'Cloud Services (AWS/GCP/Azure)',
+        level: 7,
+      },
+      {
+        name: 'Jenkins',
+        level: 4,
       },
     ],
   },
@@ -142,15 +193,15 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
+        name: 'Unity',
+        level: 6,
+      },
+      {
         name: 'React',
-        level: 9,
+        level: 4,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
+        name: 'THREE.JS',
         level: 6,
       },
     ],
@@ -163,29 +214,12 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Flask',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'SQL',
         level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -344,19 +378,9 @@ export const contact: ContactSection = {
       href: 'mailto:reachout@timbaker.me',
     },
     {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'weretere',
+      href: 'https://github.com/weretere',
     },
   ],
 };
@@ -365,9 +389,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/weretere'},
+  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  //{label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  //{label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
+  //{label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
