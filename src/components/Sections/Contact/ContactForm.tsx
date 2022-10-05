@@ -28,14 +28,17 @@ const ContactForm: FC = memo(() => {
     },
     [data],
   );
+  
 
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+      setData({name: '', email: '', message: 'Thank you, your message has been submitted :)'});
+      fetch("https://formspree.io/f/xoqbwryq", {
+          method: "POST",
+          mode: 'no-cors',
+          body: JSON.stringify(data)
+      })
     },
     [data],
   );
@@ -45,11 +48,12 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="name" value={data.name} onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
         name="email"
+        value={data.email}
         onChange={onChange}
         placeholder="Email"
         required
@@ -59,6 +63,7 @@ const ContactForm: FC = memo(() => {
         className={inputClasses}
         maxLength={250}
         name="message"
+        value={data.message}
         onChange={onChange}
         placeholder="Message"
         required
@@ -67,7 +72,7 @@ const ContactForm: FC = memo(() => {
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit">
+        type="submit" >
         Send Message
       </button>
     </form>

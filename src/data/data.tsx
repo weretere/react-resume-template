@@ -228,12 +228,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
+    title: 'Pandemic',
+    description: 'Tower Defense game to raise AIDS awareness',
     url: 'https://timbaker.me',
     image: porfolioImage1,
   },
-  {
+  /*{
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
@@ -292,7 +292,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage11,
-  },
+  },*/
 ];
 
 /**
@@ -331,24 +331,65 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'November 2020',
+    location: 'Verizon',
+    title: 'Senior Computer Vision Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Improved upon human based segmentation techniques<br></br>
+        Integrated SMPL and SMPLX body models for avatar creation<br></br>
+        Managed and integrated many COTS machine learning models<br></br>
+        Feature based camera calibration and synthesis from uncalibrated cameras<br></br>
+        Created and maintained backend server for inference human model creation<br></br>
+        Created CI/CD workflows using Luigi, Jenkins, and Docker
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'November 2019 - November 2011',
+    location: 'Major League Baseball',
+    title: 'Machine Learning Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Created advanced machine learning models to assist in computer vision<br></br>
+        Developed python APIs for integrating and rangling data from internal and external sources<br></br>
+        Developed advanced data visualizations to explore the accuracy and stability of computer vision models for segmentation and registration<br></br>
+        Developed API for quickly building deep learning models within our database and storage frameworks
+      </p>
+    ),
+  },
+  {
+    date: 'October 2017 - October 2019',
+    location: 'VUMC',
+    title: 'Computer Vision Engineer',
+    content: (
+      <p>
+        Integrated computer vision and machine learning to understand pose estimation and human activity recognition and classification<br></br>
+        Implemented sensor fusion of biometric and visual data using recurrence and temporal fusion
+      </p>
+    ),
+  },
+  {
+    date: 'May 2015 - October 2017',
+    location: 'Graduate Research Engineer',
+    title: 'Vanderbilt University',
+    content: (
+      <p>
+        Designed and conducted user studies as part of an effort to understand perception action capabilities and spatial cognition in VR and AR<br></br>
+        Used statistical testing and data analysis techniques for hypothesis testing<br></br>
+        Worked with 3D avatar creation and mixed reality integration
+      </p>
+    ),
+  },
+  {
+    date: 'January 2010 - August 2011',
+    location: 'Cummins Fuel Systems',
+    title: 'Data Scientist, Controls, and Processing Engineer',
+    content: (
+      <p>
+        Automated data processing pipelines and created data storage solutions<br></br>
+        Developed data visualization techniques to streamline analysis<br></br>
+        Designed and implemented device drivers for data collection in testing rigs
       </p>
     ),
   },
