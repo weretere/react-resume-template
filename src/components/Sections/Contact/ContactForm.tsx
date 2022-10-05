@@ -48,26 +48,26 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" value={data.name} onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
       <input
         autoComplete="email"
         className={inputClasses}
         name="email"
-        value={data.email}
         onChange={onChange}
         placeholder="Email"
         required
         type="email"
+        value={data.email}
       />
       <textarea
         className={inputClasses}
         maxLength={250}
         name="message"
-        value={data.message}
         onChange={onChange}
         placeholder="Message"
         required
         rows={6}
+        value={data.message}
       />
       <button
         aria-label="Submit contact form"
