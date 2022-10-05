@@ -2,17 +2,17 @@ import {
   AcademicCapIcon,
   CalendarIcon,
   DownloadIcon,
-  FlagIcon,
+  //FlagIcon,
   MapIcon,
-  OfficeBuildingIcon,
+  //OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
+//import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -110,10 +110,10 @@ export const aboutData: About = {
    C#, C\/C++, and others. Most of my specific work lies in Camera Calibration, 3D Computer Geometry, and Human\/Computer Interaction.
    `,
   aboutItems: [
-    {label: 'Location', text: 'NashVille, TN', Icon: MapIcon},
+    {label: 'Location', text: 'Nashville, TN', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
     {label: 'Interests', text: 'Weightlifting, kickball, home automation', Icon: SparklesIcon},
-    {label: 'Study', text: 'Vanderbilt University', Icon: AcademicCapIcon},,
+    {label: 'Study', text: 'Vanderbilt University', Icon: AcademicCapIcon},
   ],
 };
 
