@@ -109,7 +109,7 @@ export const aboutData: About = {
    `,
   aboutItems: [
     {label: 'Location', text: 'Nashville, TN', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Interests', text: 'Weightlifting, kickball, home automation', Icon: SparklesIcon},
     {label: 'Study', text: 'Vanderbilt University', Icon: AcademicCapIcon},
   ],
