@@ -230,7 +230,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Pandemic',
     description: 'Tower Defense game to raise AIDS awareness',
-    url: 'https://timbaker.me',
+    url: 'https://rickparis.dev',
     image: porfolioImage1,
   },
   /*{
