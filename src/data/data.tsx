@@ -55,7 +55,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Portfolio: 'projects',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -73,14 +73,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Hello, I'm a <strong className="text-stone-100">Computer Vision Engineer and Researcher</strong>. 
+        I do research in machine learning, extended reality, and human computer vision to help understand the future
+        of data visualization.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Outside of pursuing my research I like to unwind with Weightlifting, socialize with kickball, and build a smarter home.
       </p>
     </>
   ),
@@ -302,16 +300,32 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'November 2019',
+    location: 'Vanderbilt University',
+    title: 'Ph.D. in Computer Science',
+    content: <p>Dissertation Title: Selecting an Appropriate Locomotion Modality using Room Size and Individual Differences in Navigation Ability</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2013',
+    location: 'University of Louisville',
+    title: 'Master\'s of Computer Engineering',
+    content: <p>Main Focus: Computer Graphics Architecture<br></br>
+    Thesis Title: Modified half-edge data structure and its applications to 3D mesh generation for complex tube networks</p>,
+  },
+  {
+    date: 'May 2013',
+    location: 'University of Louisville',
+    title: 'B.S. Electrical Engineering',
+    content: <p>Main focus: Robotic Design, Microcomputer Design, Control Systems<br></br>
+    Senior Project 1: Prius Battery Management System<br></br>
+    Senior Project 2: Hot plate temperature control system</p>,
+  },
+  {
+    date: 'May 2012',
+    location: 'University of Louisville',
+    title: 'B.S. Computer Science',
+    content: <p>Main focus: Computer Graphics, Computer Architecture, Game Design<br></br>
+    Senior Project: <em>Pandemic</em> an educational tower defense game</p>,
   },
 ];
 
