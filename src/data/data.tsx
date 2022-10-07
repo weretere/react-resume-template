@@ -15,16 +15,19 @@ import GithubIcon from '../components/Icon/GithubIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-/*import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import digitalAvatar from '../images/portfolio/digital-avatar.jpg';
+import dissertationImage from '../images/portfolio/dissertation.png';
+import WiPImage from '../images/portfolio/WiP.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
+//import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+//import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+//import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+//import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+//import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/headshot.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -230,40 +233,46 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Pandemic',
     description: 'Tower Defense game to raise AIDS awareness',
-    url: 'https://rickparis.dev/threedkeypoints',
+    url: 'None',
     image: porfolioImage1,
+    link: "",
+  },
+  {
+    title: 'Camera Calibration',
+    description: 'Give a short description of your project here.',
+    url: 'None',
+    image: porfolioImage2,
+    link: "_blank",
+  },
+  {
+    title: 'Doctoral Dissertation',
+    description: 'Evaluation of Locomotion Techniques in Room and Standing Scale Tracked Spaces',
+    url: 'https://ir.vanderbilt.edu/handle/1803/10106',
+    image: dissertationImage,
+    link: "_blank",
+  },
+  {
+    title: 'Digital Avatar Creation',
+    description: 'Extracted shape, texture, and action from single camera video to create digital avatars.',
+    url: 'None',
+    image: digitalAvatar,
+    link: "_blank",
+  },
+  {
+    title: 'Walking in Place',
+    description: 'Using neural nets to understand human locomotion from head motion',
+    url: 'https://wip.rickparis.dev',
+    image: WiPImage,
+    link: "",
+  },
+  {
+    title: 'Human Based Calibration',
+    description: 'Creating camera calibration from 3D joint features',
+    url: 'threedkeypoints',
+    image: porfolioImage3,
+    link: "_blank"
   },
   /*{
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
