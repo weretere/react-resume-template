@@ -13,7 +13,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 //import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/nashville.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import digitalAvatar from '../images/portfolio/digital-avatar.jpg';
@@ -434,7 +434,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'If you\'re looking to get in touch to discuss a project or role, you can contact me here',
   items: [
     {
       type: ContactType.Email,
