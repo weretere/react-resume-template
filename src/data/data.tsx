@@ -10,17 +10,17 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 //import InstagramIcon from '../components/Icon/InstagramIcon';
-//import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import ScholarIcon from '../components/Icon/ScholarIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/nashville.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import hourglass from '../images/portfolio/hourglass.jpg';
+import mlbImage from '../images/portfolio/mlb.png';
 import digitalAvatar from '../images/portfolio/digital-avatar.jpg';
 import dissertationImage from '../images/portfolio/dissertation.png';
 import WiPImage from '../images/portfolio/WiP.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-//import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import thesisImage from '../images/portfolio/tubes.jpg';
+import calibrationImage from '../images/portfolio/calibration.webp';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 //import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
@@ -232,16 +232,16 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Pandemic',
-    description: 'Tower Defense game to raise AIDS awareness',
+    description: 'Tower Defense game to raise AIDS awareness. This project has been lost to the sands of time',
     url: 'None',
-    image: porfolioImage1,
+    image: hourglass,
     link: "",
   },
   {
     title: 'Camera Calibration',
-    description: 'Give a short description of your project here.',
+    description: 'Inferring camera calibration from broadcast images',
     url: 'None',
-    image: porfolioImage2,
+    image: mlbImage,
     link: "_blank",
   },
   {
@@ -268,17 +268,18 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Human Based Calibration',
     description: 'Creating camera calibration from 3D joint features',
-    url: 'threedkeypoints',
-    image: porfolioImage3,
+    url: 'https://calibration.rickparis.dev',
+    image: calibrationImage,
+    link: ""
+  },
+  {
+    title: 'Masters Thesis',
+    description: 'Modified half-edge data structure and its applications to 3D mesh generation for complex tube networks.',
+    url: 'https://ir.library.louisville.edu/etd/1094/',
+    image: thesisImage,
     link: "_blank"
   },
   /*{
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
@@ -455,7 +456,7 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/weretere'},
   //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  //{label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'Scholar', Icon: ScholarIcon, href: 'https://scholar.google.com/citations?hl=en&user=Sw6T5MwAAAAJ'},
   //{label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
   //{label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];

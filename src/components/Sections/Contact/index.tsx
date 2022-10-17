@@ -6,6 +6,7 @@ import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
+import ScholarIcon from '../../Icon/ScholarIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import TwitterIcon from '../../Icon/TwitterIcon';
@@ -17,6 +18,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Phone]: {Icon: DeviceMobileIcon, srLabel: 'Phone'},
   [ContactType.Location]: {Icon: LocationMarkerIcon, srLabel: 'Location'},
   [ContactType.Github]: {Icon: GithubIcon, srLabel: 'Github'},
+  [ContactType.Scholar]: {Icon: ScholarIcon, srLabel: 'Scholar'},
   [ContactType.LinkedIn]: {Icon: LinkedInIcon, srLabel: 'LinkedIn'},
   [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
   [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
